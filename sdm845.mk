@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sdm845-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sdm845-tavil-snd-card_Button_Jack.kl
 
+# Lights
+ PRODUCT_PACKAGES += \
+     android.hardware.light@2.0-service.xiaomi_sdm845
+
 # NN
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti
