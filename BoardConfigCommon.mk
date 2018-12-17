@@ -59,6 +59,9 @@ endif
 TARGET_BOARD_PLATFORM := sdm845
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 
+# Audio
+-include $(TOPDIR)hardware/qcom/audio/configs/sdm845/sdm845.mk
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 TARGET_USE_QTI_BT_STACK := true
