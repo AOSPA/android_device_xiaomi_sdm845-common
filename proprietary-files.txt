@@ -40,6 +40,29 @@ lib/libdpmframework.so
 lib/libdpmtcm.so
 -priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Misc dependencies
+lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
+lib64/vendor.xiaomi.hardware.mlipay@1.0.so
+lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
+lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
+lib64/vendor.xiaomi.hardware.tidaservice@1.0.so
+lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
+lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
+lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
+lib/vendor.xiaomi.hardware.mfidoca@1.0.so
+lib/vendor.xiaomi.hardware.mlipay@1.0.so
+lib/vendor.xiaomi.hardware.mlipay@1.1.so
+lib/vendor.xiaomi.hardware.mtdservice@1.0.so
+lib/vendor.xiaomi.hardware.mtdservice@1.1.so
+lib/vendor.xiaomi.hardware.mtdservice@1.2.so
+lib/vendor.xiaomi.hardware.tidaservice@1.0.so
+lib/vendor.xiaomi.hardware.tidaservice@1.1.so
+lib/vendor.xiaomi.hardware.vsimapp@1.0.so
+
 # Perf
 #-framework/QPerformance.jar
 lib64/libqti-perfd-client_system.so
