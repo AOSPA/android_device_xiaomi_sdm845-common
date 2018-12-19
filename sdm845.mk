@@ -28,6 +28,20 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Audio
+PRODUCT_PACKAGES += \
+    libaudio-resampler
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbluetooth_qti \
+    libbt-logClient.so
+
+# Display
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libqdMetaData.system
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -36,6 +50,10 @@ PRODUCT_PACKAGES += \
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sdm845-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sdm845-tavil-snd-card_Button_Jack.kl
+
+# NN
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-rtti
 
 # QCOM
 PRODUCT_COPY_FILES += \
