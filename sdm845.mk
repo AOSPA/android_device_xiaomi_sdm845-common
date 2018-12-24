@@ -30,7 +30,14 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@4.0 \
+    android.hardware.audio.common@4.0 \
+    android.hardware.audio.common@4.0-util \
+    android.hardware.audio.effect@4.0 \
     libaudio-resampler
+
+PRODUCT_COPY_FILES += \
+    hardware/qcom/audio/configs/sdm845/audio_policy.conf:system/etc/audio_policy.conf
 
 # Bluetooth
 PRODUCT_PACKAGES += \
