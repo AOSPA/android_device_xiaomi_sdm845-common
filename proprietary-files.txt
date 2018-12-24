@@ -128,10 +128,12 @@ bin/perfservice
 etc/init/perfservice.rc
 lib64/libqti-iopd-client_system.so
 lib64/libqti-perfd-client_system.so
+lib64/libqti-util_system.so
 lib64/libqti_performance.so
 lib64/vendor.qti.hardware.perf@1.0.so
 lib/libqti-iopd-client_system.so
 lib/libqti-perfd-client_system.so
+lib/libqti-util_system.so
 lib/libqti_performance.so
 lib/vendor.qti.hardware.perf@1.0.so
 
@@ -158,6 +160,7 @@ framework/embmslibrary.jar
 framework/qti-telephony-common.jar
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Radio - IMS
 -priv-app/ims/ims.apk
@@ -299,24 +302,45 @@ lib/libvr_sam_wrapper.so
 lib/libvraudio.so
 
 # WFD
+-framework/WfdCommon.jar
 -priv-app/WfdService/WfdService.apk
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
 etc/wfdconfigsink.xml
--framework/WfdCommon.jar
 lib64/extractors/libmmparser.so
 lib64/libFileMux.so
+lib64/libmmosal.so
 lib64/libmmparser_lite.so
+lib64/libnl.so
 lib64/libOmxMux.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
+lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/extractors/libmmparser.so
 lib/libFileMux.so
+lib/libmmosal.so
 lib/libmmparser_lite.so
+lib/libnl.so
 lib/libOmxMux.so
+lib/libwfdaac.so
+lib/libwfdavenhancements.so
 lib/libwfdclient.so
+lib/libwfdcodecv4l2.so
+lib/libwfdcommonutils.so
+lib/libwfdconfigutils.so
+lib/libwfdmminterface.so
+lib/libwfdmmsink.so
+lib/libwfdmmsrc.so
 lib/libwfdnative.so
+lib/libwfdrtsp.so
+lib/libwfdservice.so
+lib/libwfdsm.so
+lib/libwfduibcinterface.so
+lib/libwfduibcsink.so
+lib/libwfduibcsinkinterface.so
+lib/libwfduibcsrc.so
+lib/libwfduibcsrcinterface.so
 
 # Xiaomi libs dependencies
 lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
