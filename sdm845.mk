@@ -71,9 +71,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti
 
 # Perf
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
+-include vendor/qcom/common/qti-vendor.mk
 
 # QCOM
 PRODUCT_COPY_FILES += \

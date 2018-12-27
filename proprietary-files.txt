@@ -122,24 +122,12 @@ lib/vendor.display.color@1.2.so
 lib/vendor.display.postproc@1.0.so
 
 # Perf
--framework/QPerformance.jar
--framework/UxPerformance.jar
--lib64/vendor.qti.hardware.iop@1.0.so
--lib64/vendor.qti.hardware.iop@2.0.so
--lib/vendor.qti.hardware.iop@1.0.so
--lib/vendor.qti.hardware.iop@2.0.so
 bin/perfservice
 etc/init/perfservice.rc
 lib64/libqti-iopd-client_system.so
-lib64/libqti-perfd-client_system.so
 lib64/libqti-util_system.so
-lib64/libqti_performance.so
-lib64/vendor.qti.hardware.perf@1.0.so
 lib/libqti-iopd-client_system.so
-lib/libqti-perfd-client_system.so
 lib/libqti-util_system.so
-lib/libqti_performance.so
-lib/vendor.qti.hardware.perf@1.0.so
 
 # Power-off charging daemon
 -sbin/charger:sbin/chargeonlymode;rootfs|f048d2cc20783ba1a608b73d440b3053af6ec9fd
