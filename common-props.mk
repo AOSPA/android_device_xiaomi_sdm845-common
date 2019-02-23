@@ -43,7 +43,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.vendor.data.mode=concurrent \
-    persist.vendor.data.profile_update=true \
     ro.vendor.use_data_netmgrd=true
 
 # Display AD
@@ -127,6 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3="" \
     persist.vendor.ims.disableUserAgent=0 \
+    persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.flexmap_type=none \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.redir_party_num=1 \
