@@ -4,6 +4,11 @@ on init
     mount none /system/lib64/soundfx/libvolumelistener.so /vendor/lib64/soundfx/libvolumelistener.so bind
     mount none /system/lib/soundfx/libvolumelistener.so /vendor/lib/soundfx/libvolumelistener.so bind
 
+on boot
+    # DT2W
+    chown system system /proc/touchpanel/wake_gesture
+    chmod 0660 /proc/touchpanel/wake_gesture
+
 service vendor.ss_ramdump_local /vendor/bin/subsystem_ramdump
     class late_start
     user system

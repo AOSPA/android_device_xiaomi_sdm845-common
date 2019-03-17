@@ -128,6 +128,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
 TARGET_POWER_BINDMOUNT_VENDOR := true
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
