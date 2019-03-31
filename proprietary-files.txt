@@ -155,7 +155,6 @@ framework/embmslibrary.jar
 framework/qti-telephony-common.jar
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Radio - IMS
 -priv-app/ims/ims.apk
@@ -342,10 +341,12 @@ lib/libwfduibcsrcinterface.so
 lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 lib64/vendor.xiaomi.hardware.misys@1.0.so
+lib64/vendor.xiaomi.hardware.misys@2.0.so
 lib/android.hardware.soundtrigger@2.0-core.so
 lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
 lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
 lib/vendor.xiaomi.hardware.misys@1.0.so
+lib/vendor.xiaomi.hardware.misys@2.0.so
 
 # Mlipay
 lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
