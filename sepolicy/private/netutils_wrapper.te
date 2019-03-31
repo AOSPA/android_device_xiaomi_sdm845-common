@@ -1,0 +1,4 @@
+userdebug_or_eng(`
+  allow netutils_wrapper diag_device:chr_file rw_file_perms;
+')
+dontaudit netutils_wrapper diag_device:chr_file rw_file_perms;
