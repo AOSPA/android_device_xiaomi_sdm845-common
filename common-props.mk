@@ -52,15 +52,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
     ro.vendor.display.sensortype=2
 
-# Displayfeature
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.displayfeature.histogram.enable=true \
-    ro.eyecare.brightness.level=8 \
-    ro.eyecare.brightness.threshold=15 \
-    ro.hist.brightness.threshold=7 \
-    ro.whitepoint_calibration_enable=false \
-    sys.displayfeature_hidl=true
-
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
