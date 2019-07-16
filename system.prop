@@ -57,6 +57,8 @@ persist.vendor.ims.disableUserAgent=0
 
 # Media
 media.aac_51_output_enabled=true
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
