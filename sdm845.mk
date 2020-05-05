@@ -238,8 +238,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     perf \
-    telephony \
-    wfd
+    telephony
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -319,8 +318,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libdisplayconfig \
     libdisplayconfig.vendor \
+    libnl \
     libqdMetaData \
     libqdMetaData.system
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
