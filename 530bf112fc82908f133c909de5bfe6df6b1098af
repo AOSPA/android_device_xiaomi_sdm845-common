@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fbc6bffa_547aba01",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-05-25T13:48:31Z",
+      "side": 0,
+      "message": "This is good since we have it in vendor https://github.com/AOSPA/android_vendor_pa/blob/fd29b3f7f2cd24d6d78508f7d9b20815b86c062b/config/common.mk#L174",
+      "revId": "530bf112fc82908f133c909de5bfe6df6b1098af",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
