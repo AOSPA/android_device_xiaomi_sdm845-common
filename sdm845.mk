@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.qti.hardware.camera.device@1.0.vendor
 
+# Snap app permissions
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/permissions/privapp-permissions-snap.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-snap.xml
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
