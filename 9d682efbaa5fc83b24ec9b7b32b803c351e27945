@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c4c8d50e_82b7de9a",
+        "filename": "config.fs",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1000509
+      },
+      "writtenOn": "2020-06-21T13:01:01Z",
+      "side": 0,
+      "message": "We lose it",
+      "range": {
+        "startLine": 88,
+        "startChar": 0,
+        "endLine": 104,
+        "endChar": 19
+      },
+      "revId": "9d682efbaa5fc83b24ec9b7b32b803c351e27945",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
