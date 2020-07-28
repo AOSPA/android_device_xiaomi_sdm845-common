@@ -233,6 +233,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    adreno-6xx \
     av \
     bt \
     perf \
