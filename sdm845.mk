@@ -135,23 +135,8 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.sdm845 \
-    hwcomposer.sdm845 \
     libtinyxml \
-    libvulkan \
-    memtrack.sdm845 \
-    vendor.display.config@1.7 \
-    vendor.qti.hardware.display.allocator@1.0-service
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.has_HDR_display=true \
-    ro.surface_flinger.has_wide_color_display=true \
-    ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.wcg_composition_dataspace=143261696
+    libvulkan
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -235,6 +220,7 @@ PRODUCT_COPY_FILES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
+    display \
     perf \
     telephony \
     wfd
