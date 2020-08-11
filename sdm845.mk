@@ -236,6 +236,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
     av \
     bt \
     perf \
