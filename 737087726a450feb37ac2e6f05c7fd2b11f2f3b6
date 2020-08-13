@@ -16,6 +16,24 @@
       "revId": "737087726a450feb37ac2e6f05c7fd2b11f2f3b6",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f2d5b3ab_1c4c985d",
+        "filename": "audio/audio_policy_configuration.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 1000463
+      },
+      "writtenOn": "2020-08-13T15:51:42Z",
+      "side": 1,
+      "message": "Yes, I took it from here:\n\nhttps://github.com/PixelExperience-Devices/device_xiaomi_sdm845-common/commit/efe7930de0edec32dc9ca860a8222f7492b866ae#diff-a5ca0b5894324f8bb54bb9fffad29d1e",
+      "parentUuid": "eda50774_42cbc06d",
+      "revId": "737087726a450feb37ac2e6f05c7fd2b11f2f3b6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
     }
   ]
 }
