@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eda50774_42cbc06d",
+        "filename": "audio/audio_policy_configuration.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 1000092
+      },
+      "writtenOn": "2020-08-13T15:48:59Z",
+      "side": 1,
+      "message": "Is it belongs to this patchset?",
+      "revId": "737087726a450feb37ac2e6f05c7fd2b11f2f3b6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
