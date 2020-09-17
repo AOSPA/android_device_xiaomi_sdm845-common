@@ -1,3 +1,10 @@
+# ADB
+persist.sys.usb.config=diag,adb
+sys.usb.config=diag,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+
 # Audio
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
