@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "vendor.pa.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sdm845",
-    init_rc: ["vendor.pa.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sdm845.rc"],
+    name: "vendor.aospa.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sdm845",
+    init_rc: ["vendor.aospa.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sdm845.rc"],
     srcs: [
         "service.cpp",
         "FingerprintInscreen.cpp",
@@ -30,7 +30,7 @@ cc_binary {
         "liblog",
         "libutils",
         "vendor.goodix.hardware.biometrics.fingerprint@2.1",
-        "vendor.pa.biometrics.fingerprint.inscreen@1.0",
+        "vendor.aospa.biometrics.fingerprint.inscreen@1.0",
         "vendor.xiaomi.hardware.fingerprintextension@1.0",
     ],
 }
