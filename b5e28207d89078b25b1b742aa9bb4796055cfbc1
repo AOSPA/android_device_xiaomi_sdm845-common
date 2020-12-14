@@ -16,6 +16,23 @@
       "message": "Shouldn\u0027t you just rename this to vendor.aospa instead of remove it?",
       "revId": "b5e28207d89078b25b1b742aa9bb4796055cfbc1",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71ba16ab_bdafa893",
+        "filename": "fod/FingerprintInscreen.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000463
+      },
+      "writtenOn": "2020-12-14T23:05:37Z",
+      "side": 0,
+      "message": "We don\u0027t track xiaomi_hardware, Xiaomi interfaces are inside our device tree. Then can you rename this to \n\u003cdevice/xiaomi/sdm845-common/interfaces/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h\u003e",
+      "revId": "b5e28207d89078b25b1b742aa9bb4796055cfbc1",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
