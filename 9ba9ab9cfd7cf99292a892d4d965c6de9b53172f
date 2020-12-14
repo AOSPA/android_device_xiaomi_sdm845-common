@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1bdd0ff9_d86cfddf",
+        "filename": "framework_manifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000463
+      },
+      "writtenOn": "2020-12-14T23:02:13Z",
+      "side": 1,
+      "message": "can\u0027t we drop this file? the same definition exists in the device specific tree.",
+      "revId": "9ba9ab9cfd7cf99292a892d4d965c6de9b53172f",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}

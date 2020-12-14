@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90777fcb_369f420b",
+        "filename": "fod/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1000463
+      },
+      "writtenOn": "2020-12-14T23:02:13Z",
+      "side": 0,
+      "message": "Shouldn\u0027t you just rename this to vendor.aospa instead of remove it?",
+      "revId": "b5e28207d89078b25b1b742aa9bb4796055cfbc1",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
