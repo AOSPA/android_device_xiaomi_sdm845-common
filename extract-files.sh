@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2018-2020 The LineageOS Project
-# Copyright (C) 2020 Paranoid Android
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,14 +12,37 @@ set -e
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-PA_ROOT="${MY_DIR}"/../../..
+ANDROID_ROOT="${MY_DIR}/../../.."
 
-HELPER="${PA_ROOT}/vendor/pa/build/tools/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
 fi
 source "${HELPER}"
+
+function blob_fixup() {
+    case "${1}" in
+        system_ext/etc/init/dpmd.rc)
+            sed -i "s/\/system\/product\/bin\//\/system\/system_ext\/bin\//g" "${2}"
+            ;;
+        system_ext/etc/permissions/com.qti.dpmframework.xml)
+            ;&
+        system_ext/etc/permissions/dpmapi.xml)
+            ;&
+        system_ext/etc/permissions/qcrilhook.xml)
+            ;&
+        system_ext/etc/permissions/telephonyservice.xml)
+            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
+            ;;
+        system_ext/etc/permissions/qti_libpermissions.xml)
+            sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
+            ;;
+        system_ext/lib64/libdpmframework.so)
+            sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
+            ;;
+    esac
+}
 
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
@@ -60,19 +83,17 @@ fi
 
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
-    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${PA_ROOT}" true "${CLEAN_VENDOR}"
+    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
-    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
-            "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     source "${MY_DIR}/../${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${PA_ROOT}" false "${CLEAN_VENDOR}"
+    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
-            "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
